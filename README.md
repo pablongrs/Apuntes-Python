@@ -230,3 +230,89 @@ def dividir(dividendo,divisor):
 dividir(14,3)  
   ```
 
+## CLASES Y OBJETOS
+
+Los **Objetos** se crean a partir de una plantilla llamada "**Clase**". Cada objeto es una instancia de su clase. <br>
+Los objetos tienen **Atributos** que son como caracteristicas o propiedades que los definen.<br>
+Ejemplo: En una clase "Persona" los atributos podrian ser *Nombre, Edad, Altura*.<br>
+Los objetos tienen **Metodos** que son como acciones que los objetos pueden realizar. <br>
+
+Sintaxis en python
+  ```python
+ class Nombre_clase:
+ def __init__ (self,parametros):  #Metodo Constructor
+  ```
+
+*Declaracion de atributos*
+
+**Metodo Constructor** <br>Su funcion es inicializar los atributos del objeto creado a partir de la clase que lo posea.
+```python
+class Gato:
+
+  def __init__(self,nombre,edad,raza): #Constructor
+       self.nombre = nombre
+       self.edad = edad
+       self.raza = raza
+    
+gato1 = Gato('michi',2,'Siames') #creacion de Objeto
+
+#Metodo para imprimir los Datos
+   def presentar(self):
+      return print('nombre:',self.nombre,'edad:',self..)
+
+#Invoco el metodo
+gato1.presentar() 
+```
+
+### Encapsulamiento
+Se utiliza cuando es necesario q ciertos metodos o propiedades sean inviolables o inalterables. Se refiere a la ocultacion de los detalles internos de una clase para proteger los datos de accesos no autorizados o modificaciones accidentales.
+```python
+class CuentaBancaria:
+     def __init__(self,saldo):   #Constructor
+         self.__saldo = saldo  #Atributo privado con __ para encapsulamiento
+   
+     def depositar(self,monto):   #Metodo
+         if monto > 0:
+            self.__saldo += monto
+         else:
+            print("Error, el monto debe ser un numero positivo")
+
+     def obtener_saldo(self):  # Método 
+         return self.__saldo
+
+# Crea una instancia de la clase CuentaBancaria
+cuenta = CuentaBancaria(1000)
+
+#Invoco el metodo depositar y le paso el monto 500 como argumento
+cuenta.depositar(500)  
+print(cuenta.obtener_saldo())  # Salida: 1500
+```
+`self.__saldo` es un atributo encapsulado, lo que significa que no debe ser accedido directamente desde fuera de la clase.
+
+### Herencia
+Permite crear nuevas clases a partir de otras. Permite a la clase hija acceder a todos los metodos y tener las propiedades de la clase padre.
+Se utiliza cuando tenemos clases q se parecen entre si pero tienen ciertas particularidades. <br>
+
+Ej: Si tengo la clase Persona y la clase Empleado, un empleado es una persona, entonces puede heredar todo.
+```python
+class Persona:
+   def __init__(self,nombre,edad):
+       self.nombre = nombre
+       self.edad = edad
+   
+   def hablar(self):     #Metodo de la clase Persona
+       print("Hola, estoy hablando")
+```
+`SUPER()` Se utiliza para indicar que Atributos va a heredar la clase hija.
+```python
+
+class Empleado(Persona):  #Asi va a heredar
+   def __init__(self,nombre,edad,trabajo):
+      super().__init__(nombre,edad) #Atributos que hereda
+      self.trabajo = trabajo
+
+  
+roberto = Empleado("roberto",43,"Programador")
+roberto.hablar()   #Heredo el metodo de la clase Persona
+```
+*Los metodos que sean creados en la clase hija no se pueden usar en la clase padre*
