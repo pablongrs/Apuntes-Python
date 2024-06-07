@@ -11,11 +11,13 @@ nombre = "Messias"
 
 #### CONVERSION DE DATOS
 ``` python
-numString = "8.5" (String),  numInt = 4 (Entero) <br>
+numString = "8.5" (String)
+numInt = 4 (Entero) 
 # Conversion
-conversion1 = float(numString), conversion2 = String(numInt)  
+conversion1 = float(numString)
+conversion2 = String(numInt)  
 
-print(type(nameVar)) ->Imprimo el tipo <br>
+print(type(nameVar)) #Imprimo el tipo 
 ```
 
 #### ESTRUCTURAS DE CONTROL
@@ -23,11 +25,11 @@ print(type(nameVar)) ->Imprimo el tipo <br>
 **IF ELSE**
 ``` python
 if a < b:
-            print('a es menor que b')
+   print('a es menor que b')
 elif a > b:
-           print('a es mayor que b')
+   print('a es mayor que b')
 else:
-           print('a y b son iguales')
+   print('a y b son iguales')
 ```
 
 **FOR** <BR>
