@@ -15,7 +15,7 @@ numString = "8.5" (String)
 numInt = 4 (Entero) 
 # Conversion
 conversion1 = float(numString)
-conversion2 = String(numInt)  
+conversion2 = str(numInt)  
 
 print(type(nameVar)) #Imprimo el tipo 
 ```
