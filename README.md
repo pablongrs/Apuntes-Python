@@ -1,6 +1,18 @@
 ## APUNTES DE PYTHON
 
+### Introducción 
 Este apunte contiene informacion basica sobre los fundamentos de Python. Al final del documento, se incluyen algunos recursos para profundizar más en cada tema.
+
+
+1. [Variables](#variables)
+2. [Estructuras de Control](#estructuras-de-control)
+3. [Listas](#listas)
+4. [Tuplas](#tuplas)
+5. [Diccionarios](#diccionarios)
+6. [Iterables](#iterables)
+7. [Funciones](#funciones)
+8. [POO](#clases-y-objetos)
+9. [Recursos adicionales ](#recursos)
 
 #### VARIABLES
 
@@ -10,6 +22,7 @@ x = 10
 real = 8.5
 nombre = "Messias"
 esJueves = False
+var_sinValor = None
 ```
 
 #### CONVERSION DE DATOS
@@ -26,6 +39,8 @@ print(type(nameVar)) #Imprimo el tipo
 #### ESTRUCTURAS DE CONTROL
 
 **IF ELSE**
+Se utiliza para tomar decisiones. **if** evalua una condición, si es verdadera ejecuta el bloque de codigo correspondiente. Si la condición es falsa, el bloque de código no se ejecuta. <br>
+En este ejemplo, en caso de que la primera condicion (a < b) sea falsa, se evalua la segunda condición, si es verdadera se imprime: *a es mayor que b*. En caso de No ser verdadera, se ejecuta la tercera accion  **else**.
 ``` python
 if a < b:
    print('a es menor que b')
@@ -49,6 +64,7 @@ SALIDA: 2,3,4,5,6
 ```
 
 **WHILE** <br>
+Evalua la condicion, si es verdadera se ejecuta el bloque de acciones.<br> El bloque se puede ejecutar 0, 1 o mas veces.
 ``` python
 num=1
 while num < 6:
