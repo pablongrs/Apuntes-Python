@@ -1,5 +1,7 @@
 ## APUNTES DE PYTHON
 
+Este apunte contiene informacion basica sobre los fundamentos de Python. Al final del documento, se incluyen algunos recursos para profundizar más en cada tema.
+
 #### VARIABLES
 
 name_var = value
@@ -7,6 +9,7 @@ name_var = value
 x = 10
 real = 8.5
 nombre = "Messias"
+esJueves = False
 ```
 
 #### CONVERSION DE DATOS
@@ -318,3 +321,22 @@ roberto = Empleado("roberto",43,"Programador")
 roberto.hablar()   #Heredo el metodo de la clase Persona
 ```
 *Los metodos que sean creados en la clase hija no se pueden usar en la clase padre*
+
+### RECURSOS
+
+**Cursos Youtube**
+- Python desde 0 ( **Pildorasinformaticas** ) [LINK](https://www.youtube.com/watch?v=G2FCfQj-9ig&list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS)
+- Python desde 0 ( **SoyDalto** ) [LINK](https://www.youtube.com/watch?v=nKPbfIU442g&t=71s)
+
+**Apuntes** 
+- El libro de Python [LINK](https://ellibrodepython.com/)
+- Aprende Python [LINK](https://aprendepython.es/)
+
+- Python de cero a experto ( **jvadillo** ) [LINK](https://github.com/jvadillo/aprende-python-desde-cero-a-experto?tab=readme-ov-file)
+
+- Programacion Orientada a Objetos ( **Apuntes de Nico** ) [LINK](https://apuntesdenico.notion.site/POO-Programaci-n-Orientada-a-Objetos-eba7559e26054df3a1b80cef90101f8e)
+
+**Ejercicios**
+- Ejercicios de Programación con Python [LINK](https://aprendeconalf.es/docencia/python/ejercicios/)
+
+
